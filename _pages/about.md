@@ -12,14 +12,16 @@ I'm a third year undergraduate student from [Kuang Yaming Honors School](https:/
 
 Research Interest
 =========
-Currently I'm interested in neural network and deep learning. As a junior student,I'm working hard to learn the knowledge and techniques of machine learning.
-
+Currently I'm interested in neural network and deep learning. 
+As a junior student,I'm working hard to learn the knowledge and techniques of machine learning.
 
 
 Awards
 ========
-- 2022&2023 Specialized Scholarships for the Top Basic Disciplines Program
+- 2022 Specialized Scholarships for the Top Basic Disciplines Program
+- 2022 Renmin scholarship
+- 2023 Specialized Scholarships for the Top Basic Disciplines Program
 - 2023 Honorable Mention in ICM(Interdisciplinary Contest in Modeling)
-- 2023 
+- 2023 Second Prize of Jiangsu Province in CUMCM(China Undergraduate Mathematical Contest in Modeling)
 
 
