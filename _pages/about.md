@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # About me
-I'm a third year undergraduate student from [Kuang Yaming Honors School](dii.nju.edu.cn),[Nanjing University](www.nju.edu.cn).
+I'm a third year undergraduate student from [Kuang Yaming Honors School](https://dii.nju.edu.cn),[Nanjing University](https://www.nju.edu.cn).
 
 A data-driven personal website
 ======
