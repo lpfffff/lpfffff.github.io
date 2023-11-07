@@ -10,14 +10,16 @@ redirect_from:
 
 I'm a third year undergraduate student from [Kuang Yaming Honors School](https://dii.nju.edu.cn),[Nanjing University](https://www.nju.edu.cn).
 
-**Research Interest**
-------
-Currently I'm interested in neural network and deep learning. 
+Research Interest
+=========
+Currently I'm interested in neural network and deep learning. As a junior student,I'm working hard to learn the knowledge and techniques of machine learning.
 
 
 
-**Awards**
-
-- test
+Awards
+========
+- 2022&2023 Specialized Scholarships for the Top Basic Disciplines Program
+- 2023 Honorable Mention in ICM(Interdisciplinary Contest in Modeling)
+- 2023 
 
 
