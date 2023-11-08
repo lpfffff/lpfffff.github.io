@@ -10,5 +10,5 @@ redirect_from:
 I will post my notes here,which include course notes and self-study notes.
 
 Currently posted notes are as follows:
-- neural network
+- [neural network](../blogs/NN_note.md)
 - reinforcement learning
