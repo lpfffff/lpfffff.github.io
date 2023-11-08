@@ -12,9 +12,8 @@ I'm a third year undergraduate student from [Kuang Yaming Honors School](https:/
 
 Research Interest
 =========
-Currently I'm interested in neural network and deep learning.   
-
-As a junior student,I'm working hard to learn the knowledge and techniques of machine learning.
+Currently I'm interested in neural network and deep learning.As a junior student,I'm working hard to learn the knowledge and techniques of machine learning.  
+I'm fortunate to join [Meta Graphics & 3D Version group](http://www.njumeta.com/) for scientific research practice.
 
 
 Awards
