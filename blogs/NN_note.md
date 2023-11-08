@@ -1,4 +1,8 @@
-## 神经网络课程笔记
+---
+layout: archive
+title: "神经网络课程笔记"
+author_profile: true
+---
 ### 梯度下降算法&优化器
 - GD(gradient descent)：计算目标函数关于参数的梯度 $g_t = \nabla_{\theta}J(\theta)$, 之后更新模型参数：$$\theta_{t +1} = \theta_{t} - \alpha \nabla_{\theta}J(\theta)$$在此基础上衍生了**BDG**（批量梯度下降）,一次考虑多对样本，考虑平均梯度:$$\theta_{t+1} = \theta_{t} - \alpha_{t}\cdot\frac{1}{n}\cdot\sum_{i= 1}^n \nabla_{\theta}J_{i}(\theta,x^i,y^i)$$同样衍生出了**SDG**（随机梯度下降）,每次随机选择一个样本计算梯度，训练速度快，但梯度下降的波动较大，容易从一个局部最优跳到另一个局部最优:$$\theta_{t+1} = \theta_{t} - \alpha\cdot \nabla_{\theta}J_{i}(\theta,x^i,y^i)$$
 
