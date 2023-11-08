@@ -31,5 +31,6 @@
 - NLL (negative log-likelyhood)
 - cross entropy
 - KL 散度(KL divergence):a type of statistical distance: a measure of how one probability distribution P is different from a second, reference probability distribution Q.即衡量两个概率分布的差异。（在强化学习中很有用）。
-  设定义在采样空间$\mathcal{X}$的两个概率分布P,Q,则从Q到P的KL散度定义为:$$D_{KL}(P || Q) = \sum_{x\in \mathcal{X}} P(x)\log\left(\frac{P(x)}{Q(x)}\right)$$对于连续变量的概率分布，定义为：$$D_{KL}(P||Q) = \int_{-\infty}^\infty p(x) \log\left(\frac{p(x)}{q(x)}\right)dx$$
+  设定义在采样空间$\mathcal{X}$的两个概率分布P,Q,则从Q到P的KL散度定义为:$$D_{KL}(P || Q) = \sum_{x\in \mathcal{X}} P(x)\log\left(\frac{P(x)}{Q(x)}\right)$$对于连续变量的概率分布，定义为：
+  $$ D_{KL}(P||Q) = \int_{-\infty}^\infty p(x) \log\left(\frac{p(x)}{q(x)}\right)dx $$
 
