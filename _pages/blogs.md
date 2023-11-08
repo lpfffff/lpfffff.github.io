@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
-Test
-=======
-I will put my notes here.
+I will post my notes here,which include course notes and self-study notes.
+
+Currently posted notes are as follows:
+- neural network
+- reinforcement learning
