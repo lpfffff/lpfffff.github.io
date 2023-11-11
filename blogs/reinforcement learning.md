@@ -1,4 +1,8 @@
-## 强化学习&深度强化学习笔记
+---
+layout: archive
+title: "强化学习&深度强化学习笔记"
+author_profile: true
+---
 ### 一些基本概念
 - 定义：智能体与环境的不断交互（即在给定状态采取动作），进而获得奖励，此时环境从一个状态转移到下一个状态。智能体通过不断优化自身动作策略，以期待最大化其长期回报或收益（奖励之和）。
 - 状态State：The state s is a complete description of the state of the world where the states are fully observable. Whereas observation o is a partial description of the state of the world.
