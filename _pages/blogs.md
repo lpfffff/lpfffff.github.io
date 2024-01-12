@@ -11,3 +11,4 @@ Currently posted notes are as follows:
 - [Neural Network](../blogs/NN_note.md)
 - Convex Optimization
 - [Reinforcement Learning](../blogs/reinforcement_learning.md)
+- [Data Structure & Algorithm](../blogs/数据结构期末复习.html)
