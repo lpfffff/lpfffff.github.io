@@ -1,0 +1,664 @@
+<!DOCTYPE html><html><head>
+      <title>review</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\刘鹏飞\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<ul>
+<li>mechanism, implicit, explicit, categories, continues</li>
+</ul>
+<h2 id="chapter-1">chapter 1 </h2>
+<ol>
+<li>Classification and regression methods are usually described as supervised learning methods. Explain why. And describe the difference between the two.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Rely on labeled dataset to build predictive models(the input data (features) and the corresponding correct output (labels) are known).<br>
+Difference: deals with categorical (discrete) outputs or continuous outputs.</li>
+</ul>
+<ol start="2">
+<li>What do you need in order to produce a classification model?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Labeled dataset; Feature engineering; Model selection; Evalution(Acc); Hyperparameter tuning; Test.</li>
+</ul>
+<ol start="3">
+<li>How do you know that you have produced a good model?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Good performence on metrics(Acc, F1-score, recall); generalizes well(test data); balance between bias and variance; satisfies the requirement.</li>
+</ul>
+<ol start="4">
+<li>Why is a classification model also called a generalized model?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Generalize from train data by learning the pattern and can classfy the unseen data; Avoid overfitting, validation data make sure it captures the underlying data distribution rather than remember the train data. Good performence on new data.</li>
+</ul>
+<ol start="5">
+<li>Explain how a clustering task differs from a classification task.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> supervised &amp; unsupervised learning;<br>
+produces clusters of similar data points &amp; produces specific category labels for each data.<br>
+Discover inherent structure and patterns in the data &amp; Predict correct label for new data.</li>
+</ul>
+<ol start="6">
+<li>What is the core operation/measurement required in a clustering task?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> distance measurement.</li>
+</ul>
+<ol start="7">
+<li>How do you know that you have produced a good clustering outcome?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> NMI, ARI(ground truth is available) or DI measure; Expert validation and outcome is meaningful.</li>
+</ul>
+<ol start="8">
+<li>Explain how an anomaly detection task differs from a classification task and a clustering task.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Unsupervised &amp; supervised; Imbalanced &amp; balanced dataset; focuses on finding rare instances within data (without clear label) &amp;  categorize data into specific, known classes.</li>
+<li><strong>A:</strong> Focus on unusual data points &amp; groups hole datasets into clusters; Provide a score whether normal or anomaly &amp; assign each data to a cluster.
+<ul>
+<li>similarity: unsupervised, based on similarity measure; helping to understand dataset; algorithm overleap: DBSCAN.</li>
+</ul>
+</li>
+</ul>
+<ol start="9">
+<li>How do you know that you have produced a good anomaly detection outcome?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> F1-score: balance precission and recall; AUC-ROC: (TPR-FPR) Measures the model's ability to distinguish between normal and anomalous points.</li>
+</ul>
+<ol start="10">
+<li>How does association pattern mining differ from other data mining tasks?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> foucus on association between items; sparse binary database(transaction data); <strong>Metrics</strong>: support, confidence</li>
+</ul>
+<ol start="11">
+<li>How does association pattern mining differ from rule-based classification?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> describe relationship between items &amp; generate rules to map input feature to class; apriori &amp; decision tree; Evaluation metrics.</li>
+</ul>
+<h2 id="chapter-2">Chapter 2 </h2>
+<ul>
+<li>SVD and PCA are extraordinarily useful because matrix and linear algebra operations are everywhere in data mining. SVD and PCA make such matrix operations easier by providing convenient decompositions and basis representations.</li>
+</ul>
+<ol>
+<li>What is the attribute type of each of the following kinds of attributes (a)Age, (b) Salary, (c) Zip Code, (d) Province of Residence, (e) Height, (f) Weight.
+<ol>
+<li>Nomial定类变量：加减乘除没有意义，只有等不等于(distinctness)</li>
+<li>Ordinal定序变量：distinctness &amp; order</li>
+<li>Interval定距变量：可以比大小，差值有意义（年龄）</li>
+<li>Ratio定比变量：有绝对零点，加减乘除有意义（高度）</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Continuous: a,b,e,f; Discrete: c,d. Nomial: c,d; Ratio: a,b,e,f.</li>
+</ul>
+<ol start="2">
+<li>An analyst sets up a sensor network in order to measure the temperature of different locations over a period. What is the data type of the data collected?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Time series, numerical.</li>
+</ul>
+<ol start="3">
+<li>An analyst processes Web logs in order to create records with the ordering information for Web page accesses from different users. What is the type of this data?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Ordinal</li>
+</ul>
+<ol start="4">
+<li>Describe the difference between interval and ratio attribute type.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> <strong>Interval</strong>: do not have a true zero point; addition and subtraction are meaningful &amp; multiplication and division are meaningless. (calendar)<br>
+<strong>Ratio</strong>: has a true zero point; addition, subtraction,multiplication, division are meaningful.(height, weight, age)</li>
+</ul>
+<ol start="5">
+<li>Suppose that you are employed as a data mining consultant for an Internet search engine company. Describe how data mining can help the company by giving specific examples of how techniques, such as clustering, classification, association rule mining, and anomaly detection can be applied.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> clustering: User segmentation to give personalized search experience; classification: spam dectation; association rule mining: advertising. anomaly dection: system performance monitoring.</li>
+</ul>
+<ol start="6">
+<li>Distinguish between noise and outliers. Be sure to consider the following questions.<br>
+(a) Is noise ever interesting or desirable? Outliers?<br>
+(b) Can noise objects be outliers?<br>
+(c) Are noise objects always outliers?<br>
+(d) Are outliers always noise objects?<br>
+(e) Can noise make a typical value into an unusual one, or vice versa?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Noise is undesirable obscure the true pattern. Outliers can be interesting and provide valuable insights. Noise can be outliers deviate significantly from other data. Not always. No, they can be significant observations. Both yes, after adding a noise, typical can be unusual and vice versa.</li>
+</ul>
+<ol start="7">
+<li>The following attributes are measured for members of a herd of Asian elephants: weight, height, tusk length, trunk length, and ear area. Based on these measurements, what sort of similarity measure would you use to compare or group these elephants? Justify your answer and explain any special circumstances.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Euclidean distance because it considers differences across all dimensions simultaneously. Need preprocess such as normalization.</li>
+</ul>
+<ol start="8">
+<li>Discuss why a document-term matrix is an example of a data set that has asymmetric discrete or asymmetric continuous features.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Terms occur differently across documents. Only presence (a non-zero attribute value) is regarded as important.</li>
+</ul>
+<ol start="9">
+<li>Suppose that you had a set of arbitrary objects of different types representing different characteristics of widgets. A domain expert  gave you the similarity value between every pair of objects. How would you convert these objects into a multidimensional data set?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> construct  similarity matrix, use multidimentional scaling(MDS).</li>
+</ul>
+<ol start="10">
+<li>Consider the time-series 1, 1, 3, 3, 3, 3, 1, 1. Perform wavelet decomposition of the time series. How many coefficients of the series are non-zero?</li>
+</ol>
+<ul>
+<li><strong>A:</strong></li>
+</ul>
+<ol start="11">
+<li>Suppose that you had a data set, such that each data point corresponds to sea surface temperatures over a square mile of resolution 10 × 10. In other words, each data record contains a 10 ×10 grid of temperature values with spatial locations. You also have some text associated with each 10 × 10 grid. How would you convert this data into a multidimensional data set?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Flatten the grid to 100-dimensional vector; Word2Vec embedding algo; concatenate them.</li>
+</ul>
+<ol start="12">
+<li>Suppose that you had a set of discrete biological protein sequences, which are annotated with text describing the properties of the protein. How would you create a multidimensional representation from this heterogeneous data set?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Sequence encoding; text annotation processing by NLP algo; combine them; dimension reduction.</li>
+</ul>
+<ol start="13">
+<li>Apart from the assumption that the specified distance matrix is Euclidean, what is the assumption of using Multidimensional Scaling (MDS) in converting a graph to multidimensional representation?<br>
+Hint: The violation of the assumption will not allow MDS to convert a graph.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Must be a Fully connected graph</li>
+</ul>
+<ol start="14">
+<li>What is the assumption of spectral methods?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> underlying cluster structure and can captured by eigenvalue of similarity or laplacian matrix; graph representation; eigengap; lies on a low-dimensional manifold.</li>
+</ul>
+<ol start="15">
+<li><strong>Describe how you would perform clustering using spectral clustering if the dataset is in<br>
+a. Multidimensional representation<br>
+b. Time series</strong><br>
+c. Graphs</li>
+</ol>
+<ul>
+<li><strong>A:</strong> similarity matrix(k-nn), laplacian matrix(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>D</mi><mo>−</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">L = D - A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>), eign decomposition, form embedding, clusteri(k-means)</li>
+</ul>
+<ol start="16">
+<li>MDS methods are designed for preserving global distances; and spectral methods are designed for preserving local distances. Explain the meanings of global distances and local distances in this context.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> distance between points that are far apart the origin space &amp; close to each other in origin space; preserve the overall geomatric structure &amp; maintaining the relationships among the nearby points.<br>
+<img src="image.png" alt="alt text"></li>
+</ul>
+<h2 id="chapter-3">Chapter 3 </h2>
+<ul>
+<li>Data independent distance must take local data distribution into consideration via some methods in order to do well in practice.</li>
+<li>The problem of distance/similarity function design is a crucial one in the context of data mining applications.</li>
+<li>Recommend to use a data dependent similarity rather than data independent distance/kernel, especially in datasets with varied densities.</li>
+</ul>
+<ol>
+<li>Explain the reason why existing distance measures and kernels are affected by certain types of data distributions, as explained in the textbook.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Purely based on the geometry position of the points in the data/input space, independent of data distribution.</li>
+</ul>
+<ol start="2">
+<li>Yet, many algorithms which employ these measures have no issues in these data distribution, e.g., k-nearest neighbor classifier, SVM and DBSCAN. Explain the reason why.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Only cares about neighbors. Won't consider the global distance.</li>
+</ul>
+<ol start="3">
+<li><strong>A generic method for local distance computation is given as follows:</strong><br>
+a. Partition the data into a set of local regions (use a clustering method)<br>
+b. For any pair of objects, determine the most relevant region for the pair, and compute the pairwise distances using the local statistics of that region. For example, the local Mahalanobis distance may be used in each local region.
+<ol>
+<li>Discuss the issues with this method.</li>
+<li>Suggest one or more alternatives. Explain the reason why these alternatives are better.</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><strong>A:</strong> It need a cluster algotithm, the performance depends on the algorithm you choose. The efficiency may be low. Use IDK for the same purpose.</li>
+</ul>
+<ol start="4">
+<li>How would you choose an algorithm (or design an algorithm) for a data mining task at hand? The task could be any of the following: classification, clustering or anomaly detection. Discuss the issues you would consider in a sequential order.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Understand the problem: know what you want and how data looks like; Data preprocessing: cleaning, feature engineering, normalization; Algorithm selection: task type, similarity measures, classic algo first; trade-off between model complexity and performance; Evaluation method and validation; Hyperparameter fine tuning</li>
+</ul>
+<ol start="5">
+<li>Derive the mathematical relationship between cosine similarity and Euclidean distance when each data object has an L2 length of 1.</li>
+</ol>
+<ul>
+<li><strong>A:</strong>  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Euclidean</mtext><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt><mrow><mn>2</mn><mo>−</mo><mn>2</mn><mo>∗</mo><mtext>cosine</mtext><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></msqrt></mrow><annotation encoding="application/x-tex">\text{Euclidean}(x,y) = \sqrt{2 - 2 * \text{cosine}(x,y)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Euclidean</span></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.305em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.935em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord text"><span class="mord">cosine</span></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span><span style="top:-2.895em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.28em" viewBox="0 0 400000 1296" preserveAspectRatio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119
+c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
+c340,-704.7,510.7,-1060.3,512,-1067
+l0 -0
+c4.7,-7.3,11,-11,19,-11
+H40000v40H1012.3
+s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
+c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
+s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
+c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
+M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.305em;"><span></span></span></span></span></span></span></span></span></li>
+</ul>
+<ol start="6">
+<li>Explain the similarity measure you will use to measure flight paths of many migratory birds in a dataset in order to find the most similar flight paths. Name the data type of this dataset.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Spatio-temporal data. Dynamic time warping. DTW effectively handles variations in timing and speed, ensuring accurate alignment and comparison of the spatial flight paths of migratory birds.</li>
+</ul>
+<ol start="7">
+<li>Explain the criteria you would use to choose a distance/similarity measure and provide the reason(s) of these choices.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Data type; perforcemance on dataset; dimensionality: cosine or euclidean; attribute relationship: mahalanobis distance consider correlation.</li>
+</ul>
+<ol start="8">
+<li>What makes a complex data object complex?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Usually not i.i.d. Exhibit high dimensionality, diverse attribute types, dependencies between attributes, temporal dynamics, graph representations.</li>
+</ul>
+<ol start="9">
+<li>As the complexity of a data object increases, the choice of a distance/similarity measure increases. Explain the reason of this phenomenon.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> brings in a variety of attributes(high dimensionality), relationships, and structures(graph) that need to be accounted for in measuring distance or similarity. Traditional measures might not capture the nuances of complex data properly,</li>
+</ul>
+<ol start="10">
+<li>When do we need to measure similarity between (a) two nodes; and (b) two graphs?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Social networks: community detection; Recommendation systems; &amp; Graph evolution analysis; subgraph matching; overall structure.</li>
+</ul>
+<h3 id="isolation-kernel">Isolation Kernel </h3>
+<ol>
+<li>Compare with the generic method for local distance computation, described on page 73 in Aggarwal, Chapter 3:<br>
+a. Partition the data into a set of local regions (use a clustering method)<br>
+b. For any pair of objects, determine the most relevant region for the pair, and compute the pairwise distances using the local statistics of that region. For example, the local Mahalanobis distance may be used in each local region.<br>
+Describe its similarities and differences with Isolation Kernel.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Both wants to participate the space into many local regions while the generic method use clustering method and IK use isolating space partitioning mechanism (nearset neighbor, isolation-tree, hypersphere). IK is faster and has a better performance.</li>
+</ul>
+<ol start="2">
+<li>Discuss how Isolation Kernel deal with the issues of data distribution described on pages 69-73 in Aggarwal, Chapter 3.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> In IK, two points of equal inter-point distance are less similar in dense reigon than in sparse reigon.</li>
+</ul>
+<h2 id="chapter-4">Chapter 4 </h2>
+<ol>
+<li>Explain the similarities and differences between the main classification methods.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> ability to handle binary or multiclass classification tasks and their foundational concepts (e.g., learning from data, finding patterns).<br>
+Decision tree(intuitive, overfitting), SVM(high-dimension), K-NN(lazy learning, non-parametric), neural network(large data). model complexity, interpretability, computational requirements, handling of overfitting</li>
+</ul>
+<ol start="2">
+<li>Explain why the divide-and-conquer algorithm used to generate a decision rule is called a greedy algorithm.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Immediate Gain: The choice is made to maximize immediate benefits; Local optimization by criteria like information gain. No backtracking.</li>
+</ul>
+<ol start="3">
+<li>The set-covering algorithm used to generate decision rules is sometimes called the separate-and-conquer algorithm. How does this differ conceptually from the divide-and-conquer algorithm?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Generates rules sequentially, each covering different parts of the dataset. &amp; Recursively splits the data into subsets to form a tree structure.</li>
+</ul>
+<ol start="4">
+<li>As the k-nearest neighbor algorithm does nothing in training, does it produce a generalized model that enables it to classify well on unseen data points?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> if the training data can represent the potential data distribution and distance metric and parameter K are important.</li>
+</ul>
+<ol start="5">
+<li>Explain the distinct features of SVM with respect to other classification methods.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> can apply kernel trick easily, model only depends on support vectors, good performance in high dimensional space.</li>
+</ul>
+<ol start="6">
+<li>Which of the four classification algorithms require a distance/similarity function?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> K-NN.</li>
+</ul>
+<ol start="7">
+<li><strong>Describe the two key steps in k-means clustering.</strong></li>
+</ol>
+<ul>
+<li><strong>A:</strong> 1. For each data point, calculate the distance to each cluster and assign the point to the nearest cluster; 2. For each cluster, calculate the mean of all data assigned to that cluster and update the cluster by the mean value. Terminates until cluster center do not change.</li>
+</ul>
+<ol start="8">
+<li><strong>Describe the two key steps in DBSCAN.</strong></li>
+</ol>
+<ul>
+<li><strong>A:</strong> 1. For each data point, count the number of points within the radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ϵ</span></span></span></span>. If the number is at least MinPts, the point is classified as a core point; 2. Form clusters by connecting core points and their neighbors, recursively add all directly density-reachable point until no more points can be added.</li>
+</ul>
+<ol start="9">
+<li><strong>Describe the three key steps in Spectral clustering.</strong></li>
+</ol>
+<ul>
+<li><strong>A:</strong> 1. Construct similarity graph: represent dataset as graph by k-NN to determine edges and weight and calculate similarity graph. 2. eigen-decomposition on Laplacian matrix and map each point into new space represented by k eigenvectors. 3. Do further clustering by k-means.</li>
+</ul>
+<ol start="10">
+<li>Describe the operational principle of
+<ol>
+<li>Distance-based anomaly detector.</li>
+<li>Isolation-based anomaly detector.</li>
+<li>IDK-based anomaly detector.</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><strong>A:</strong> 1. Calculate distance; score data point by its distance to nearest neighbor. 2. build isolation tree, ensemble them into isolation forest. the nodes that closer to root are more likely to be anomaly. 3. calculate KME between distribution and Dirac measure, if socre is low its anomaly corresponding to given dataset.</li>
+</ul>
+<ol start="11">
+<li>Is an Isolation tree a variant of decision tree? Explain your answer.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> No, Isolation tree doesn't need label, a unsupervised algorithm for anomaly detection. type of binary tree structure used for anomaly detection. It recursively partitioning the feature space into subsets until each instance  is isolated in its own leaf node, the anomaly is closer to the root.</li>
+</ul>
+<ol start="12">
+<li>Explain another possible way to perform isolation which is different from using isolation trees. Hint: the principle is to isolate one point from the rest of the points in a sample.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Nearest neighbor partitioning(Voronoi Diagram) and hypersphere partitioning.</li>
+</ul>
+<ol start="13">
+<li>Describe the important concepts in enumeration tree algorithms.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Frequent Itemsets: sets of items that appear together in a transaction database with a frequency; Enumerate tree structure: root(null), node: item set, Leaves: represent the maximal frequent itemsets; Pruning: prun itemset if any subset is not frequent; Downward closure property: subset of a frequent itemset also frequent.</li>
+</ul>
+<ol start="14">
+<li>The aim of an enumeration tree algorithm is to have a systematic exploration of the candidate patterns in a non-repetitive way.
+<ol>
+<li>Why is “non-repetitive” an important criterion?</li>
+<li>Why is “systematic” an important criterion?</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><strong>A:</strong> high efficiency; search all the space rather than random search.</li>
+</ul>
+<ol start="15">
+<li>Given a multidimensional dataset, you are consulted as a data mining consultant to explore ways to extract interesting information from this dataset. Explain which algorithm(s) you will use and why.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Clustering(K-Means, DBSCAN): indentify the natural groupings without label; PCA: visualize the high-dimension data; Classification(SVM): build predictive models. Association rule minging(apirori); Anomaly detection(isolation forest).</li>
+</ul>
+<ol start="16">
+<li>Can we use the data mining algorithms we have studied for a spatial (or graph) dataset? Explain your answer.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Clustering: DBSCAN is particularly suitable as it can find clusters of varying density and handle noise, which is common in spatial data &amp; Spectral clustering can be effective for graph data by using the graph's Laplacian matrix to find clusters. Anomaly detection: Local Outlier Factor (LOF) can identify spatial anomalies by considering local density. Graph kernel.</li>
+</ul>
+<h2 id="chapter-5">Chapter 5 </h2>
+<ol>
+<li>What is the insight and its relation with IDK?<br>
+<img src="image-3.png" alt="alt text"></li>
+<li>What are the assumptions of the insight?</li>
+<li>What are the advantages of using a distributional treatment for time series?<br>
+<strong>A:</strong> Don't need consider the alignment issue.</li>
+<li>Can you provide any disadvantages of using a distributional treatment for time series? Hint: relate to the assumption(s) of the insight.</li>
+<li>Describe the difference between the time domain approach and the R domain approach.<br>
+<strong>A:</strong> point-to-point distance, slide window<br>
+<strong>A:</strong> i.i.d assumption</li>
+<li>What are the similarity and difference between group anomaly detection and anomalous subsequence detection?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Both aim to identify unusual patterns in data that deviate from the norm.</li>
+</ul>
+<ol start="7">
+<li>What else can be done with the proposed distributional treatment in time series?</li>
+<li>Discuss any other opportunities in using the distributional treatment. What is the key in any of these opportunities?</li>
+</ol>
+<h2 id="chapter-6">Chapter 6 </h2>
+<ol>
+<li>Describe the key difference between traditional measures of trajectories and the distributional measures.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Uniqueness</li>
+</ul>
+<ol start="2">
+<li>Explain how important is the uniqueness property of a measure for trajectories.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Without the property, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo mathvariant="normal">≠</mo><mi>Y</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>X</mi><mo separator="true">,</mo><mi>Y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\neq Y, dist(X,Y) = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span class="mord"><span class="mrel"></span></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> we may think they are the most similar. This is wrong.</li>
+</ul>
+<ol start="3">
+<li>Describe how you would use a distributional kernel to perform clustering of a dataset of trajectories. Explain in what ways the suggested method are similar to and different from 𝒦AT (in detecting anomalous trajectories from a dataset of trajectories).</li>
+</ol>
+<ul>
+<li><strong>A:</strong> First map each trajectory <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">X_i\in D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> to a point in Hilbert space using <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Φ</mi><mi>I</mi></msub><mo stretchy="false">(</mo><msub><mi mathvariant="script">P</mi><msub><mi>X</mi><mi>i</mi></msub></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Phi_I(\mathcal{P}_{X_i})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0001em;vertical-align:-0.2501em;"></span><span class="mord"><span class="mord">Φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em;">I</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathcal" style="margin-right:0.08222em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0822em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0785em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>; then we use k-means to cluster these points.</li>
+</ul>
+<ol start="4">
+<li>Can any distributional measures (e.g., Wasserstein distance) be used in the same way as described in (3)? If not, describe how you would use such a distributional measure to perform clustering of a dataset of trajectories.</li>
+<li>Similarity of Trajectory &amp; Sub-trajectary anomaly detection: (aggregate: 总计)<br>
+<img src="image-1.png" alt="alt text"></li>
+</ol>
+<h2 id="chapter-7">Chapter 7 </h2>
+<ol>
+<li>Consider two graphs, which are cliques containing an even number 2·n nodes. Let exactly half the nodes in each graph belong to labels A and B. What are the total number of isomorphic matchings between the two graphs?</li>
+<li>Consider two graphs, containing 2 · n nodes and n distinct labels, each occurring twice. What is the maximum number of isomorphic matchings between the two graphs?</li>
+<li>Compute the Morgan Indices of order 1 and 2, for each node of the Acteominophen graph. How does the Morgan Index vary with the label (corresponding to chemical element)?</li>
+<li>In general, a kernel-based method is preferred over distance-based method (e.g., in the context of classification). Explain why this is so.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Kernel method map the points into a higher space where the problem may have a linear boundary so we can use more efficient algorithm in new space.</li>
+</ul>
+<ol start="5">
+<li>Describe how a single large neighborhood graph can be constructed from a dataset of graphs in order to use spectral clustering. (Hint: the first issue you need to resolve is: how to represent a graph.)</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Represent each graph using graph embedding or graph kernels; construct adjacency matrix based on pairwise distance; form the neighborhood graph using k-nearest neighbor; perform spectual clustering</li>
+</ul>
+<ol start="6">
+<li>Describe the difference between labeled (non-attributed) graphs and attributed graphs.</li>
+<li>Graph kernels can be categorized into two kinds of feature mapping: implicit and explicit. Which category does each of Random-walk kernel, shortest path kernel and WL kernel belong? Explain your answer in relation to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false">(</mo><msub><mi>G</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>G</mi><mi>j</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">(</mo><msub><mi>G</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo separator="true">⋅</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">(</mo><msub><mi>G</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">K(G_i,G_j) = \Phi(G_i) ·  \Phi(G_j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord">Φ</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">Φ</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+</ol>
+<ul>
+<li><strong>A:</strong> Explicit: WL iteratively refines and construct feature vectors based on node label which means it compute <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo stretchy="false">(</mo><msub><mi>G</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Phi(G_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Φ</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> for each node.<br>
+Implicit: Random-walk and shortest path both avoid explicit construction of feature vector by directly compute similarity <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false">(</mo><msub><mi>G</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>G</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">K(G_i,G_j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>. Shortest path consider node pairs and random walk consider sequence(exponential).<br>
+<img src="image-2.png" alt="alt text"></li>
+</ul>
+<ol start="8">
+<li>Consider the three graph kernels and the generic transformational (GT) approach we have studied. Can these graph kernels be used with GT? Explain the reason why.</li>
+<li>Why k-medoids are used instead of k-means in the graph domain?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> K-mediods use actual data point as cluster centers makes it more robust to outliers(can effect the mean) and does not assume the data is Euclidean and the mean of all points may be meaningless in graph data.</li>
+</ul>
+<ol start="10">
+<li>Would kernel k-means be a valid method when a graph kernel is used to measure similarity between two graphs?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Depends on the graph kernel you choose, shortest path or random work can't but WL kernel can.</li>
+</ul>
+<ol start="11">
+<li>Given what you have learned about graph kernels, explain how you will use them to perform data mining (i.e., anomaly detection, clustering or clustering) in each of the following problems:
+<ol>
+<li>A dataset of small graphs</li>
+<li>A large network<br>
+Explain the necessary ingredients in order to perform a data mining task, e.g., which graph kernel (or any graph kernel), algorithm to use, etc.</li>
+</ol>
+</li>
+<li>The graph kernels we have studied do not take the distribution of node vectors in an attributed network into consideration. Discuss how the distribution may be incorporated in the WL kernel.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Using IK to map the vector into Hilbert space, this can take the distribution into consideration.</li>
+</ul>
+<h2 id="chapter-8">Chapter 8 </h2>
+<p><img src="image-4.png" alt="alt text"></p>
+<ol>
+<li><strong>Explain what concept drift is. How does it relate to iid (independent and identically distributed)?</strong></li>
+</ol>
+<ul>
+<li><strong>A:</strong> Statistical properties of the variable change overtime in unforeseen way, underlying data distribution. Concept drift drictly challenages iid because the distribution changes over time and if the change due to time-dependent factors, the independent property also does not hold.</li>
+</ul>
+<ol start="2">
+<li>Describe the difference between data stream and timeseries. How does concept drift in a data stream relate to timeseries?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Time series data is sequential data with explicit timestamps while data stream may not have an explicit time component associated with data point. Time dependency (distribution change over time).</li>
+</ul>
+<ol start="3">
+<li>Out of the four constraints in data streams, explain which constraints the synopsis approach addresses.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> One pass contraint; resource constraint; massive-domain constraint</li>
+</ul>
+<ol start="4">
+<li><strong>Explain how one can use microclusters to perform clustering.</strong></li>
+</ol>
+<ul>
+<li><strong>A:</strong> microcluster is a summary of a subset of the data points in the stream. It maintains statistics such as the mean, number of points (weight). Continuous Update: As new data points arrive, microclusters are continuously updated to reflect the evolving distribution of data in the stream.<br>
+Clustering Process: For each incoming data point: Determine which microcluster it should belong to based on distance metrics. Update the microcluster statistics (centroid, weight) to incorporate the new point. If necessary, merge microclusters to maintain a manageable number and prevent excessive growth.</li>
+</ul>
+<ol start="5">
+<li>Specify whether k-means, k-medoids or DBSCAN can use microclusters to perform clustering.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> K-means because it has the mean which is microcluater needed.</li>
+</ul>
+<ol start="6">
+<li>To deal with concept drift, a fixed length sliding window is often used. Discuss the merits and limitation of this approach.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Focus on recent patterns, memory efficiency, easy to implement; limited history context, size of the window is hard to choose, may not specify sudden drift or gradual drift.</li>
+</ul>
+<ol start="7">
+<li>Discuss how you may use a sketch for anomaly detection in data streams.</li>
+<li>Discuss the disadvantage and advantage of using a sketch for anomaly detection.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Too simple, fast.</li>
+</ul>
+<ol start="9">
+<li>Explain the nature of the SENC (Classification under streaming emerging new classes) problem: is it a classification problem only? Explain your answer.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Do classification with data stream and it must continuously adapt to new incoming data(dynamic update). Emerging new classes, it must handle the new classes rather than fixed classes as a priori. Not just a classification, detect new class and real time processing.</li>
+</ul>
+<ol start="10">
+<li>Clustering is sometimes suggested as a method for outlier detection. Discuss the advantage and disadvantage of this method in comparison to outlier detection methods such as LOF (Local Outlier Factor) and Isolation Forest.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> No advantage. Focus on the normal rather than anomaly so the performance might be worse.</li>
+</ul>
+<ol start="11">
+<li>The problem of streaming classification is especially challenging because of the impact of concept drift. One simple approach is to use a reservoir sample to create a concise representation of the training data. This concise representation can be used to create an offline model. If desired, a decay-based reservoir sample can be used to handle concept drift. Such an approach has the advantage that any conventional classification algorithm can be used since the challenges associated with the streaming paradigm have already been addressed at the sampling stage. Discuss the issues in using this approach.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Can only handle the simple concept drift. There are many different kinds of concept drift.</li>
+</ul>
+<h2 id="chapter-9">Chapter 9 </h2>
+<ol>
+<li>Explain what a 2-way minimum cut problem is.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> The 2-way minimum cut problem focuses on finding the most efficient way to split a graph into two parts by minimizing the "cost" of the edges that connect the two parts.</li>
+</ul>
+<ol start="2">
+<li>Why is the balancing constraint more important in community detection algorithms, as compared to multidimensional clustering algorithms? What would the unconstrained minimum 2-way cut look like in a typical real network?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Cut one node to get the minimum cost, vary imbalance.</li>
+</ul>
+<ol start="3">
+<li>Explain why the Kernighan-Lin algorithm is a local method. Does it produce balanced clusters?</li>
+<li><strong>Explain why the Spectral Clustering is a global method. Does it produce balanced clusters?</strong></li>
+<li>The last step of the Spectral Clustering procedure often employs k-means clustering. Explain why this is the clustering algorithm of choice (and not other clustering algorithms).</li>
+<li>Must we use k-means as the final step in the Spectral Clustering procedure? Explain the impact (if any) of using a different clustering algorithm.</li>
+<li>Describe the differences in using graph kernels to deal with a large graph versus a database of graphs.</li>
+<li>Describe the differences in using spectral clustering to deal with a large graph versus a database of graphs.</li>
+<li>One of the drawback of Kernighan-Lin is: random initialization. Does spectral clustering has the same drawback?</li>
+<li>The term “spectral clustering” is a misnomer because the “spectral” component performs feature transformation only and a separate clustering algorithm must be used to perform the actual clustering. Discuss this statement (whether it is true or false, and explain your reasoning)</li>
+<li>Can we use graph kernels for collective classification? How can we do it?</li>
+<li>How does the graph kernel approach differ from the spectral embedding based approach for collective classification?</li>
+</ol>
+<h2 id="chapter-10">Chapter 10 </h2>
+<ul>
+<li>协同过滤, contanted-based recommendation</li>
+<li>PageRank, SimRank, HITS</li>
+<li>Update Authority(linked by hub): A web page’s authority score is the sum of the hub scores of all pages linking to it. Update Hub: A web page’s hub score is the sum of the authority scores of all pages it links to.</li>
+</ul>
+<ol>
+<li>There are two types of web data. Name them and describe which type of data is used for (a) ranking systems, and (b) recommender systems.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Web content data; Web usage data</li>
+</ul>
+<ol start="2">
+<li>“Content information biases the recommendation towards items described by similar keywords to what the user has seen in the past. Collaborative filtering methods work directly with the utility matrix, and can therefore avoid such bias.”<br>
+Discuss why the utility matrix can avoid such bias.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> The utility matrix in collaborative filtering avoids the keyword bias inherent in content-based methods by:<br>
+Focusing on user interactions and behavior rather than item descriptions. Discovering latent factors that represent deeper and more complex patterns in user preferences. Providing diverse recommendations based on similarities in user behavior, not just item features. By leveraging these aspects, collaborative filtering methods can offer more varied and potentially surprising recommendations that might be missed by content-based approaches.</li>
+</ul>
+<ol start="3">
+<li>Describe how you would use PageRank to measure the similarity between two nodes in a graph.</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Run two times, get the mean of steady state probability</li>
+</ul>
+<ol start="4">
+<li>In the bipartite graph on slide#24, what is the SimRank value between a user node and an item node? In this light, explain the weakness of the SimRank model. How would you measure node similarity in such cases?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> Zero, they will never meet. High time complexity. PageRank.</li>
+</ul>
+<ol start="5">
+<li>What is the advantage of using clustering methods in recommender systems compared with methods such as collaborative filtering and content-based recommendation?</li>
+</ol>
+<ul>
+<li><strong>A:</strong> <strong>Efficiency</strong>: groups users or items into clusters, reducing the number we need to compare. Other methods need to pairwise comparision which is computionally expensive. <strong>Good performance in sparse datasets</strong>: make recommendation based on cluster. Other struggles sparsity and can't give accurate recommandations. <strong>Cold start problem</strong>: Collabrative filtering has no interation data for new users or items.</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
